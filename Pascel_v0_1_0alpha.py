@@ -3161,6 +3161,7 @@ class MyWindow(QMainWindow):
 
     def initMenuBar(self):
         menubar = self.menuBar()
+        menubar.setGeometry(0,0,self.width(),30)
         file_menu = menubar.addMenu('File')
 
         open_action = QAction('Open', self)
